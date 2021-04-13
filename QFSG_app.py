@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.neural_network import MLPRegressor
-import _pickle as cPickle   
+import pickle as cPickle   
 import matplotlib as mpl
 from mpl_toolkits import mplot3d
 import plotly.express as px
@@ -122,9 +122,7 @@ if Dim == '2D - Faster':
         df2 = pd.DataFrame(data=df2, columns=colms)
         df2['Total Deformation (mm)']=df1['Total Deformation (mm)']
         df2.drop('X Location (mm)',axis=1,inplace=True)
-        import matplotlib as mpl
-        import matplotlib
-        matplotlib.use('Agg')
+        
         zlist=np.linspace(0,1000,101)
         ylist=np.linspace(0,height,int((height+10)*0.1))
         Y, Z = np.meshgrid(ylist, zlist)
