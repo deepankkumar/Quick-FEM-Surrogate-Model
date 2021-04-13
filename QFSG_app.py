@@ -106,6 +106,7 @@ if Dim == '2D - Faster':
         plt.show()
         max = df2['Equivalent (von-Mises) Stress (MPa)'].max()
         st.subheader("2D: Stress Plot | Max Absolute Stress: "+str(max)+"Mpa")
+        st.text(' ')
         st.pyplot(fig=fig, clear_figure=None)
     elif Res == 'Deformation':
         
@@ -142,7 +143,9 @@ if Dim == '2D - Faster':
         from matplotlib import pyplot as plt
         plt.show()
         max = df2['Total Deformation (mm)'].max()
+               
         st.subheader("2D: Deformation Plot | Max Deformation: "+str(max)+"mm")
+        st.text(' ')
         st.pyplot(fig=fig, clear_figure=None)
         
 if Dim == '3D - Slower':       
@@ -181,7 +184,7 @@ if Dim == '3D - Slower':
         fig.update_layout(scene_aspectmode='data')
         max = df2['Equivalent (von-Mises) Stress (MPa)'].max()
         st.subheader("3D: Stress Plot | Max Absolute Stress: "+str(max)+"Mpa")
-       
+        st.text(' ')
         st.write(fig)
         
     elif Res == 'Deformation':
@@ -203,5 +206,6 @@ if Dim == '3D - Slower':
             fig.update_layout(scene_aspectmode='data')
             max = df2['Total Deformation (mm)'].max()
             st.subheader("3D: Deformation Plot | Max Deformation: "+str(max)+"mm")
+            st.text(' ')
             st.write(fig)
     
