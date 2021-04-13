@@ -31,7 +31,7 @@ st.header('Final Year Project')
 st.markdown("""
  * Use the menu at left to select data and set plot parameters
  * Your plots will appear below""")
-with st.sidebar.beta_expander("contributors"):
+with st.sidebar.beta_expander("Contributors"):
 
     st.markdown("""
  * [Dr. Ravindra Nagar | PI](https://scholar.google.co.in/citations?user=FhllTOgAAAAJ&hl=en)
