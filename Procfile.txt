@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run QFSM-app.py
+web: sh setup.sh && streamlit run QFSG_app.py
