@@ -34,10 +34,10 @@ st.markdown("""
 with st.sidebar.beta_expander("Contributors"):
 
     st.markdown("""
- * [Dr. Ravindra Nagar | PI](https://scholar.google.co.in/citations?user=FhllTOgAAAAJ&hl=en)
- * [Deepank Singh](https://deepanksingh.wordpress.com)
- * [Udbhav Tripathi](https://udbhavtripathi.wordpress.com)
- * [Abhijeet Yadav](https://abhijeetyadav2.wordpress.com)
+ * [Dr. Ravindra Nagar | PI]()
+ * [Deepank Singh]()
+ * [Udbhav Tripathi]()
+ * [Abhijeet Yadav]()
 """)
 
 st.sidebar.markdown("## Select the input data")
