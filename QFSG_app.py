@@ -25,7 +25,7 @@ def load_gw(t0, detector):
 
 # Title the app
 st.title('Quick FEM Surrogate Model')
-expander = st.beta_expander("About")
+expander = st.expander("About")
 expander.write("In this project we have developed the ML-model for the prediction of Stress and deformation on a 3-D cantilever beam. This will accelerate the product development workflow by dramatically reducing the speed of FEM analysis.")
 st.header('Final Year Project')
 st.markdown("""
